@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name     = 'GPUImage'
+  s.name     = 'GPUImageFork'
   s.version  = '0.1.6'
   s.license  = 'BSD'
   s.summary  = 'An open source iOS framework for GPU-based image and video processing.'
   s.homepage = 'https://github.com/BradLarson/GPUImage'
   s.author   = { 'Brad Larson' => 'contact@sunsetlakesoftware.com' }
-  s.source   = { :git => 'https://github.com/BradLarson/GPUImage.git', :tag => "#{s.version}" }
+  s.source   = { :git => 'https://github.com/PitNikola/GPUImage.git', :commit => "e06c5329181768fc8c6a596b1db01cb0c718e1bf" }
   
   s.source_files = 'framework/Source/**/*.{h,m}'
   s.resources = 'framework/Resources/*.png'
