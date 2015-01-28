@@ -269,6 +269,12 @@ void GPUImageCreateResizedSampleBuffer(CVPixelBufferRef cameraFrame, CGSize fina
     return;
 }
 
+#pragma mark - Other Public Methods
+
+- (AVCaptureStillImageOutput *)photoOutput {
+    return photoOutput;
+}
+
 #pragma mark - Private Methods
 
 - (void)capturePhotoProcessedUpToFilter:(GPUImageOutput<GPUImageInput> *)finalFilterInChain withImageOnGPUHandler:(void (^)(NSError *error))block
