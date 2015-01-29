@@ -27,4 +27,6 @@
 - (UIImage *) currentFilteredFrameWithOrientation:(UIImageOrientation)imageOrientation;
 - (CGImageRef) newCGImageFromCurrentFilteredFrame;
 
+- (void)refreshFilters;
+
 @end

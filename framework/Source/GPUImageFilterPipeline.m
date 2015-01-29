@@ -215,4 +215,10 @@
     return [(GPUImageOutput<GPUImageInput> *)[_filters lastObject] newCGImageFromCurrentlyProcessedOutput];
 }
 
+#pragma mark - Public
+
+- (void)refreshFilters {
+    [self _refreshFilters];
+}
+
 @end
