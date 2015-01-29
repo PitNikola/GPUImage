@@ -109,6 +109,8 @@ void GPUImageCreateResizedSampleBuffer(CVPixelBufferRef cameraFrame, CGSize fina
         [videoOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
     }
     
+    [photoOutput setOutputSettings:@{AVVideoCodecKey : AVVideoCodecJPEG}];
+    
     [self.captureSession addOutput:photoOutput];
     
     [self.captureSession commitConfiguration];
